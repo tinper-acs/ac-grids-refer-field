@@ -22,9 +22,9 @@ var _asyncValidator = require('async-validator');
 
 var _asyncValidator2 = _interopRequireDefault(_asyncValidator);
 
-var _mdfRefer = require('@yonyou/mdf-refer');
+var _index = require('@yonyou/mdf-refer/lib/index');
 
-var _mdfRefer2 = _interopRequireDefault(_mdfRefer);
+var _index2 = _interopRequireDefault(_index);
 
 var _FieldWrap = require('./FieldWrap');
 
@@ -191,7 +191,7 @@ var GridsReferField = function (_Component) {
             error: false
         };
 
-        _this.model = new _mdfRefer.cb.models.ReferModel({
+        _this.model = new _index.cb.models.ReferModel({
             cRefType: props.cRefType,
             displayname: props.displayname
         });
@@ -276,7 +276,7 @@ var GridsReferField = function (_Component) {
             _react2["default"].createElement(
                 'span',
                 { style: { 'display': 'none' } },
-                _react2["default"].createElement(_mdfRefer2["default"], {
+                _react2["default"].createElement(_index2["default"], {
                     wrapClassName: 'user-refer-modal',
                     modelName: 'refer', model: this.model, config: this.config })
             ),

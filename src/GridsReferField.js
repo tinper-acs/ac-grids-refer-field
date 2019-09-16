@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import schema from 'async-validator';
-import MdfRefer,{cb} from '@yonyou/mdf-refer'
+import MdfRefer,{cb} from '@yonyou/mdf-refer/lib/index'
 import FieldWrap from './FieldWrap';
 import isEqual from 'lodash.isequal'
 import FormControl from 'bee-form-control';
