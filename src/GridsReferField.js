@@ -59,7 +59,7 @@ class GridsReferField extends Component {
             error: false,
         };
 
-        this.model=new cb.models.ReferModel({
+        this.model=new cb.models.MdfReferModel({
             cRefType:props.cRefType,
             displayname:props.displayname
         })

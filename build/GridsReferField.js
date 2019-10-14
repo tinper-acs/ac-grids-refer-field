@@ -191,7 +191,7 @@ var GridsReferField = function (_Component) {
             error: false
         };
 
-        _this.model = new _index.cb.models.ReferModel({
+        _this.model = new _index.cb.models.MdfReferModel({
             cRefType: props.cRefType,
             displayname: props.displayname
         });
