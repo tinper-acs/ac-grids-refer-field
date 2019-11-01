@@ -166,7 +166,6 @@ class GridsReferField extends Component {
         });
     }
     clickOut=(e)=>{
-        e&&e.stopPropagation&&e.stopPropagation()
         this.onBlurTimer&&clearTimeout(this.onBlurTimer);
     }
 
@@ -174,12 +173,12 @@ class GridsReferField extends Component {
         this.onBlurTimer&&clearTimeout(this.onBlurTimer);
         this.onBlurTimer=setTimeout(()=>{
             this.props.onBlur();
-        },100)
+        },200)
     }
 
     iconClick=(e)=>{
+        this.onBlurTimer&&clearTimeout(this.onBlurTimer);
         this.model.browse();
-        this.clickOut(e)
     }
 
 

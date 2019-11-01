@@ -169,7 +169,6 @@ var GridsReferField = function (_Component) {
         };
 
         _this.clickOut = function (e) {
-            e && e.stopPropagation && e.stopPropagation();
             _this.onBlurTimer && clearTimeout(_this.onBlurTimer);
         };
 
@@ -177,12 +176,12 @@ var GridsReferField = function (_Component) {
             _this.onBlurTimer && clearTimeout(_this.onBlurTimer);
             _this.onBlurTimer = setTimeout(function () {
                 _this.props.onBlur();
-            }, 100);
+            }, 200);
         };
 
         _this.iconClick = function (e) {
+            _this.onBlurTimer && clearTimeout(_this.onBlurTimer);
             _this.model.browse();
-            _this.clickOut(e);
         };
 
         _this.state = {
