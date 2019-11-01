@@ -201,7 +201,7 @@ class GridsReferField extends Component {
                 <span className='refer-out' ref='field'>
                     <FormControl 
                         value={this.state.value}
-                        onBlur={this.onBlur} 
+                        // onBlur={this.onBlur} 
                         ref='input' 
                         onClick={()=>{ReactDOM.findDOMNode(this.refs.input)&&ReactDOM.findDOMNode(this.refs.input).focus();}}
                         onChange={(value)=>{this.handlerChange({value:value})

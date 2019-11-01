@@ -284,9 +284,9 @@ var GridsReferField = function (_Component) {
                 'span',
                 { className: 'refer-out', ref: 'field' },
                 _react2["default"].createElement(_beeFormControl2["default"], {
-                    value: this.state.value,
-                    onBlur: this.onBlur,
-                    ref: 'input',
+                    value: this.state.value
+                    // onBlur={this.onBlur} 
+                    , ref: 'input',
                     onClick: function onClick() {
                         _reactDom2["default"].findDOMNode(_this3.refs.input) && _reactDom2["default"].findDOMNode(_this3.refs.input).focus();
                     },

@@ -1,0 +1,38 @@
+.ac-edit-grid .u-table tr td .refer-out {
+  position: relative;
+  width: calc(100% - 4px);
+  height: 30px;
+  top: 0;
+  display: block; }
+
+.ac-edit-grid .u-table tr td .refer-out .u-form-control {
+  width: calc(100% - 30px);
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 30px; }
+
+.ac-edit-grid .u-table tr td .refer-out .uf-symlist {
+  position: absolute;
+  right: 0;
+  height: 30px;
+  line-height: 30px;
+  color: #adb4bc;
+  cursor: pointer;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 20px;
+  top: 0px;
+  padding-top: 1px;
+  border: 1px solid #a5adba;
+  border-left: none;
+  background: #FFF;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
+
+.ac-edit-grid .u-table tr td .refer-out .u-form-control:focus ~ .uf-symlist {
+  border: 1px solid #66afe9;
+  border-left: none; }
