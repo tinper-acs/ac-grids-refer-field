@@ -162,7 +162,7 @@ class GridsReferField extends Component {
                     error: false
                 });
             }
-            onValidate && onValidate(field, fields, index);
+            onValidate && onValidate(errors,field, fields, index);
         });
     }
     clickOut=(e)=>{
